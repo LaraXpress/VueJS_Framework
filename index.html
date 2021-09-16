@@ -15,7 +15,13 @@
 		<p>{{ msg }}</p>
     <p>{{info.name}}</p>
     <a v-bind:href="info.url" target="_blank">{{info.url}}</a>
-    <p v-html="info.code">{{info.code}}</p>		
+    <p v-html="info.code">{{info.code}}</p>
+    <h3>Count : {{ count }}</h3>
+    <button v-on:click="increament">Increment</button>
+    <button v-on:click="decreament">Decrement</button>
+    <hr/>
+    <button @click="count = count + 1">Increament</button>
+    <button @click="count = count - 1">Decreament</button>  		
 	</div>    	
     <script src="app.js"></script>
   </body>
