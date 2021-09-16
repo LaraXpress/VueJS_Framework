@@ -3,7 +3,7 @@ var app = Vue.createApp({
     return{
       msg : 'Welcome to Vue JS',
       info:{
-        name : 'Laravel Framework',
+        name : 'Vue JS Framework',
         url  : 'http://www.laravel.com',
         code : "<a href='http://www.bbc.co.uk'>BBB News</a>"
       }
