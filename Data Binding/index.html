@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Vue JS</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"><
+</head>
+<body>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 py-3">
+				<div id="app">
+					<h1>{{ name }}</h1>
+					<input type="text" class="form-control" v-model="name">
+					<p>{{content_A.title}}</p>
+					<a :href=content_A.url class="btn btn-primary" v-bind:title="content_A.title" target="_blank" >{{ content_A.title }}</a>
+					<p v-html='html'>{{ html }}</p>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+
+
+
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" ></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+	<script type="text/javascript" src="app.js"></script>
+</body>
+</html>
